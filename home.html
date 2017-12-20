@@ -3,7 +3,7 @@
 
 <head>
     <title>
-    Star Wars - API Usage
+    Star Wars - ForcePush Search
     </title>
         <link rel="shortcut icon" href="css/icon.ico">
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -23,7 +23,7 @@
             <a href="http://www.youtube.com/user/starwars" target="_blank"><img class="socialicon" src="css/yt.png" alt="YouTube"></a>
         </div>
 
-        <a href="index.html" id="official">Star Wars official</a>
+        <a href="splash.html" id="official">Star Wars official</a>
         <a href="http://lucasfilm.com/" target="_blank"><img id="lucasicon" src="css/lucasfilm.jpg" alt="LucasFilm Ltd"></a>
         <a href="http://disney.co.uk/" target="_blank"><img id="disneyicon" src="css/disney.png" alt="Disney"></a>
     </div>
@@ -53,30 +53,74 @@
 		<a href="http://swapi.co/" target="_blank"><img id="poweredby" src="css/poweredby.png" alt="SWAPI - Star Wars API"></a>
 	</section>
 
+		<div id="input">
+			<form>
+				<fieldset>
+					<label for="search_data">
+						<input placeholder="//SEARCH MOVIE OR CHARACTER. . . " type="text" id="search_data">
+					</label>
+					<input type="button" id="search_button" value="SEARCH">
+				</fieldset>
+				<fieldset>
+	                <select id="search_select">
+		                <option id="option_2" value="https://swapi.co/api/people/?search=">Characters</option>
+		                <option id="option_1" value="http://www.omdbapi.com/?s=">Movies</option>
+		                <option id="option_3" value="http://www.omdbapi.com/?i=">iMDB iD</option>
+	                </select>
 
+	            </fieldset>
+				</form>
+			</div>
 
+		<div id="search_sign">
+			<p>Characters play small sounds! Try searching 'Obi' or 'Vader' under Characters. If you would prefer not to hear them, please turn down or mute your volume.</p>
+		</div>
 
+		<div id="art_wrap1">
+    	</div>
 
 	    <div id="charactersearch">
-	    <section class="api_section">
-	    	<h3 class="api_header">oMDB/imDB</h3>
-	    		<p class="api_para">
-	    		"The OMDb API is a free web service to obtain movie information, all content and images on the site are contributed and maintained by our users.
 
-				If you find this service useful, please consider donating."
-	    		</p>
-	    </section>
+			<div id="results">
+				<img id="characterimg" src="css/defaultcharacter.png" alt="Character">
 
-	    <section class="api_section2">
-	    	<h3 class="api_header2">SWAPI</h3>
-	    		<p class="api_para2">
-	    		From Swapi : "The Star Wars API is the world's first quantified and programmatically-formatted set of Star Wars data.
-	    		After hours of watching films and trawling through content online, we present to you all the People, Films, Species, Starships, Vehicles and Planets from Star Wars.
-				We've formatted this data in JSON and exposed it to you in a RESTish implementation that allows you to programmatically collect and measure the data."
-	    		</p>
-	    </section>
+				<ul class="characterlist">
+					<li>
+						<div id="section1" class="infoBox"><a id="title1"></a></div>
+					</li>
+					<li>
+						<div id="section2" class="infoBox"><a id="title2"></a></div>
+					</li>
+					<li>
+						<div id="section3" class="infoBox"><a id="title3"></a></div>
+					</li>
+					<li>
+						<div id="section4" class="infoBox"><a id="title4"></a></div>
+					</li>
+					<li>
+						<div id="section5" class="infoBox"><a id="title5"></a></div>
+					</li>
+					<li>
+						<div id="section6" class="infoBox"><a id="title6"></a></div>
+					</li>
+					<li>
+						<div id="section7" class="infoBox"><a id="title7"></a></div>
+					</li>
+					<li>
+						<div id="section8" class="infoBox"><a id="title8"></a></div>
+					</li>
+				</ul>
+
+
+
+
+
+			</div>
+
 
 		</div>
+		<div id="art_wrap2">
+    	</div>
     </div>
 
 <br>
@@ -89,6 +133,7 @@
 <br>
 
 
+<script type="text/javascript" src="js/script.js"></script>
 
 <footer id="page_footer">
 <ul>

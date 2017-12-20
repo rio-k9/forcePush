@@ -3,7 +3,7 @@
 
 <head>
     <title>
-    Star Wars - ForcePush Search
+    Star Wars Official
     </title>
         <link rel="shortcut icon" href="css/icon.ico">
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -11,11 +11,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body class="characterbody">
 
-    <div id="topwrap" class="topcharacter">
+
+<body>
+
+<video playsinline autoplay muted loop class="featurevideo">
+    <source src="css/feature.mp4" type="video/mp4" >
+</video>
+
+    <div id="topwrap">
         <div id="socialwrap">
-			<a href="https://www.facebook.com/StarWars" target="_blank"><img class="socialicon" src="css/fb.png" alt="Facebook"></a>
+            <a href="https://www.facebook.com/StarWars" target="_blank"><img class="socialicon" src="css/fb.png" alt="Facebook"></a>
             <a href="https://www.facebook.com/StarWars" target="_blank"><img class="socialicon" src="css/tw.png" alt="Twitter"></a>
             <a href="https://plus.google.com/+StarWars/posts" target="_blank"><img class="socialicon" src="css/gp.png" alt="Google Plus"></a>
             <a href="http://instagram.com/starwars" target="_blank"><img class="socialicon" src="css/ig.png" alt="Instagram"></a>
@@ -23,127 +29,23 @@
             <a href="http://www.youtube.com/user/starwars" target="_blank"><img class="socialicon" src="css/yt.png" alt="YouTube"></a>
         </div>
 
-        <a href="splash.html" id="official">Star Wars official</a>
+        <a href="index.html" id="official">Star Wars official</a>
         <a href="http://lucasfilm.com/" target="_blank"><img id="lucasicon" src="css/lucasfilm.jpg" alt="LucasFilm Ltd"></a>
         <a href="http://disney.co.uk/" target="_blank"><img id="disneyicon" src="css/disney.png" alt="Disney"></a>
     </div>
-<div id="nav_anchor_search">
- 	<div id="nav_wrap_search">
- 		<a href="news.html"><img id="starwarslogo" src="css/starwarslogo.png" alt="StarWars.com"></a>
- 	</div>
-
- 	<div id="nav_bar">
- 		<ul>
- 			<li><a href="splash.html" target="_blank">Splash</a></li><li><a href="news.html">News</a></li><li><a href="index.html">ForcePush</a></li><li id="nav_4"><a href="usage.html">API Usage</a></li>
- 		</ul>
- 	</div>
-</div>
-
-    <div id="maincontainer">
-
-    <section id="force_banner">
-    <a id="searchpage_link" href="index.html">
-    	<img src="css/lightsaber_blue.png" class="lightsaber_blue" id="lightsaber_blue1" alt="Blue Lightsaber">
-    		<h1 id="forcepush">forcepush</h1>
-    	<img src="css/lightsaber_blue.png" id="lightsaber_blue2" class="lightsaber_blue" alt="Blue Lightsaber">
-    	</a>
-    		<p id="force_slogo">Search Engine Powered By</p>	
-    	<a href="http://www.imdb.com/" target="_blank"><img  id="imdblogo" src="css/imdblogo.jpg" alt="imDB"></a>
-    	<img  id="r2_logo" src="css/r2d2_logo.png" alt="R2-D2">
-		<a href="http://swapi.co/" target="_blank"><img id="poweredby" src="css/poweredby.png" alt="SWAPI - Star Wars API"></a>
-	</section>
-
-		<div id="input">
-			<form>
-				<fieldset>
-					<label for="search_data">
-						<input placeholder="//SEARCH MOVIE OR CHARACTER. . . " type="text" id="search_data">
-					</label>
-					<input type="button" id="search_button" value="SEARCH">
-				</fieldset>
-				<fieldset>
-	                <select id="search_select">
-		                <option id="option_2" value="https://swapi.co/api/people/?search=">Characters</option>
-		                <option id="option_1" value="http://www.omdbapi.com/?s=">Movies</option>
-		                <option id="option_3" value="http://www.omdbapi.com/?i=">iMDB iD</option>
-	                </select>
-
-	            </fieldset>
-				</form>
-			</div>
-
-		<div id="search_sign">
-			<p>Characters play small sounds! Try searching 'Obi' or 'Vader' under Characters. If you would prefer not to hear them, please turn down or mute your volume.</p>
-		</div>
-
-		<div id="art_wrap1">
-    	</div>
-
-	    <div id="charactersearch">
-
-			<div id="results">
-				<img id="characterimg" src="css/defaultcharacter.png" alt="Character">
-
-				<ul class="characterlist">
-					<li>
-						<div id="section1" class="infoBox"><a id="title1"></a></div>
-					</li>
-					<li>
-						<div id="section2" class="infoBox"><a id="title2"></a></div>
-					</li>
-					<li>
-						<div id="section3" class="infoBox"><a id="title3"></a></div>
-					</li>
-					<li>
-						<div id="section4" class="infoBox"><a id="title4"></a></div>
-					</li>
-					<li>
-						<div id="section5" class="infoBox"><a id="title5"></a></div>
-					</li>
-					<li>
-						<div id="section6" class="infoBox"><a id="title6"></a></div>
-					</li>
-					<li>
-						<div id="section7" class="infoBox"><a id="title7"></a></div>
-					</li>
-					<li>
-						<div id="section8" class="infoBox"><a id="title8"></a></div>
-					</li>
-				</ul>
-
-						
 
 
+        <div id="enter"> <a href="home.html">ENTER</a> </div>
+        <script>
+        setTimeout(function(){
+                var enter =  document.getElementById('enter')
+                enter.style.visibility = "visible";
+                enter.style.opacity = ".9";
+                },6700);
 
-			</div>
-		
-	
-		</div>
-		<div id="art_wrap2">
-    	</div>
-    </div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-	
-<script type="text/javascript" src="js/script.js"></script>
-
-<footer id="page_footer">
-<ul>
-	<li><a href="http://disneytermsofuse.com/" target="_blank">Terms of Use</a></li>
-	<li><a href="http://disneyprivacycenter.com/" target="_blank">Privacy Policy</a></li>
-	<li><a href="http://www.disneystore.com/transfer/280559/star-wars/mn/1023301/?CMP=OTL-Dcom&att=StarWars_Footer_Store" target="_blank">Star Wars Disney Store</a></li>
-	<li><a href="http://disney.go.com/guestservices/legalnotices?ppLink=pp_wdig" target="_blank">Legal Notices</a></li>
-</ul>
-</footer>
+                </script>
 
 
 </body>
+
 </html>
